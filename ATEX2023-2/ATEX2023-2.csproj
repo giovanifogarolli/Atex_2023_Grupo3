@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{262CD880-2592-4580-9B8A-18F10B78DB23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ATEX2023_2</RootNamespace>
+    <AssemblyName>ATEX2023-2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConexaoDados.cs" />
+    <Compile Include="DadosJogos.cs" />
+    <Compile Include="DadosRede.cs" />
+    <Compile Include="FrmCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastro.Designer.cs">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriaJogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriaJogo.Designer.cs">
+      <DependentUpon>FrmCriaJogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCriaRede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCriaRede.Designer.cs">
+      <DependentUpon>FrmCriaRede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJogoSelecionado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJogoSelecionado.Designer.cs">
+      <DependentUpon>FrmJogoSelecionado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginModerador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginModerador.Designer.cs">
+      <DependentUpon>FrmLoginModerador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModerador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModerador.Designer.cs">
+      <DependentUpon>FrmModerador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJogos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJogos.Designer.cs">
+      <DependentUpon>FrmJogos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRedeSelecionada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRedeSelecionada.Designer.cs">
+      <DependentUpon>FrmRedeSelecionada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRedeSocial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRedeSocial.Designer.cs">
+      <DependentUpon>FrmRedeSocial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelatorio.Designer.cs">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriaJogo.resx">
+      <DependentUpon>FrmCriaJogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCriaRede.resx">
+      <DependentUpon>FrmCriaRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJogoSelecionado.resx">
+      <DependentUpon>FrmJogoSelecionado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginModerador.resx">
+      <DependentUpon>FrmLoginModerador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModerador.resx">
+      <DependentUpon>FrmModerador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJogos.resx">
+      <DependentUpon>FrmJogos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRedeSelecionada.resx">
+      <DependentUpon>FrmRedeSelecionada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRedeSocial.resx">
+      <DependentUpon>FrmRedeSocial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelatorio.resx">
+      <DependentUpon>FrmRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\redessociais.png" />
+    <None Include="Resources\imgCelular.png" />
+    <None Include="Resources\setinha.png" />
+    <None Include="Resources\imagem.png" />
+    <None Include="Resources\seta.png" />
+    <None Include="Resources\fundo.png" />
+    <None Include="Resources\selecao.png" />
+    <None Include="Resources\selecionar.png" />
+    <None Include="Resources\Jogos.png" />
+    <None Include="Resources\RedeSocial1.png" />
+    <None Include="Resources\RedeSocial.png" />
+    <None Include="Resources\inicial.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
