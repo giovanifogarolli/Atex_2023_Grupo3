@@ -125,6 +125,7 @@
     <Compile Include="FrmRelatorio.Designer.cs">
       <DependentUpon>FrmRelatorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="moderador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCadastro.resx">
@@ -189,6 +190,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Seta2.jpeg" />
+    <None Include="Resources\Image1.png" />
     <None Include="Resources\redessociais.png" />
     <None Include="Resources\imgCelular.png" />
     <None Include="Resources\setinha.png" />
