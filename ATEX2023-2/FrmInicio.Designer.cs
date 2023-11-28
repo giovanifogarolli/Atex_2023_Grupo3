@@ -82,6 +82,7 @@
             this.lblJogos.Size = new System.Drawing.Size(62, 18);
             this.lblJogos.TabIndex = 6;
             this.lblJogos.Text = "JOGOS";
+            this.lblJogos.Click += new System.EventHandler(this.lblJogos_Click);
             this.lblJogos.MouseLeave += new System.EventHandler(this.lblJogos_MouseLeave);
             this.lblJogos.MouseHover += new System.EventHandler(this.lblJogos_MouseHover);
             // 
@@ -97,6 +98,7 @@
             this.lblRedeSocial.Size = new System.Drawing.Size(107, 18);
             this.lblRedeSocial.TabIndex = 7;
             this.lblRedeSocial.Text = "REDE SOCIAL";
+            this.lblRedeSocial.Click += new System.EventHandler(this.lblRedeSocial_Click);
             this.lblRedeSocial.MouseLeave += new System.EventHandler(this.lblRedeSocial_MouseLeave);
             this.lblRedeSocial.MouseHover += new System.EventHandler(this.lblRedeSocial_MouseHover);
             // 
@@ -130,7 +132,7 @@
             // 
             this.pctJogos.Image = global::ATEX2023_2.Properties.Resources.Jogos;
             this.pctJogos.Location = new System.Drawing.Point(368, 131);
-            this.pctJogos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctJogos.Margin = new System.Windows.Forms.Padding(2);
             this.pctJogos.Name = "pctJogos";
             this.pctJogos.Size = new System.Drawing.Size(175, 315);
             this.pctJogos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +146,7 @@
             // 
             this.pctRedes.Image = global::ATEX2023_2.Properties.Resources.RedeSocial;
             this.pctRedes.Location = new System.Drawing.Point(156, 131);
-            this.pctRedes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctRedes.Margin = new System.Windows.Forms.Padding(2);
             this.pctRedes.Name = "pctRedes";
             this.pctRedes.Size = new System.Drawing.Size(175, 315);
             this.pctRedes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,12 +160,13 @@
             // 
             this.pictureBox9.Image = global::ATEX2023_2.Properties.Resources.setinha;
             this.pictureBox9.Location = new System.Drawing.Point(6, 254);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(23, 24);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 12;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click_1);
             this.pictureBox9.MouseLeave += new System.EventHandler(this.pictureBox9_MouseLeave);
             this.pictureBox9.MouseHover += new System.EventHandler(this.pictureBox9_MouseHover);
             // 
@@ -181,9 +184,9 @@
             this.Controls.Add(this.lblJogos);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmInicio";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             this.Load += new System.EventHandler(this.FrmInicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctJogos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctRedes)).EndInit();

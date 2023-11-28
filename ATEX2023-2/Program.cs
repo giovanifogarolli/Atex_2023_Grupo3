@@ -18,6 +18,6 @@ namespace ATEX2023_2
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmCadastro());
         }
-        public static int idUser = 0, ehMod = 0;
+        public static int idUser = 1, ehMod = 0;
     }
 }
