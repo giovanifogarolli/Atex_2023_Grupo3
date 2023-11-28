@@ -63,10 +63,10 @@
             // pctJogo10
             // 
             this.pctJogo10.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo10.Location = new System.Drawing.Point(386, 297);
-            this.pctJogo10.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo10.Location = new System.Drawing.Point(515, 366);
+            this.pctJogo10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo10.Name = "pctJogo10";
-            this.pctJogo10.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo10.Size = new System.Drawing.Size(193, 158);
             this.pctJogo10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo10.TabIndex = 14;
             this.pctJogo10.TabStop = false;
@@ -77,10 +77,10 @@
             // pctJogo8
             // 
             this.pctJogo8.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo8.Location = new System.Drawing.Point(464, 148);
-            this.pctJogo8.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo8.Location = new System.Drawing.Point(619, 182);
+            this.pctJogo8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo8.Name = "pctJogo8";
-            this.pctJogo8.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo8.Size = new System.Drawing.Size(193, 158);
             this.pctJogo8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo8.TabIndex = 13;
             this.pctJogo8.TabStop = false;
@@ -91,10 +91,10 @@
             // pctJogo7
             // 
             this.pctJogo7.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo7.Location = new System.Drawing.Point(284, 148);
-            this.pctJogo7.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo7.Location = new System.Drawing.Point(379, 182);
+            this.pctJogo7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo7.Name = "pctJogo7";
-            this.pctJogo7.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo7.Size = new System.Drawing.Size(193, 158);
             this.pctJogo7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo7.TabIndex = 12;
             this.pctJogo7.TabStop = false;
@@ -105,10 +105,10 @@
             // pctJogo6
             // 
             this.pctJogo6.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo6.Location = new System.Drawing.Point(109, 148);
-            this.pctJogo6.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo6.Location = new System.Drawing.Point(145, 182);
+            this.pctJogo6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo6.Name = "pctJogo6";
-            this.pctJogo6.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo6.Size = new System.Drawing.Size(193, 158);
             this.pctJogo6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo6.TabIndex = 11;
             this.pctJogo6.TabStop = false;
@@ -119,10 +119,10 @@
             // pctJogo9
             // 
             this.pctJogo9.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo9.Location = new System.Drawing.Point(174, 297);
-            this.pctJogo9.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo9.Location = new System.Drawing.Point(232, 366);
+            this.pctJogo9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo9.Name = "pctJogo9";
-            this.pctJogo9.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo9.Size = new System.Drawing.Size(193, 158);
             this.pctJogo9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo9.TabIndex = 10;
             this.pctJogo9.TabStop = false;
@@ -133,10 +133,10 @@
             // pctVoltar
             // 
             this.pctVoltar.Image = global::ATEX2023_2.Properties.Resources.setinha;
-            this.pctVoltar.Location = new System.Drawing.Point(5, 246);
-            this.pctVoltar.Margin = new System.Windows.Forms.Padding(2);
+            this.pctVoltar.Location = new System.Drawing.Point(7, 303);
+            this.pctVoltar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctVoltar.Name = "pctVoltar";
-            this.pctVoltar.Size = new System.Drawing.Size(23, 24);
+            this.pctVoltar.Size = new System.Drawing.Size(31, 30);
             this.pctVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctVoltar.TabIndex = 9;
             this.pctVoltar.TabStop = false;
@@ -147,10 +147,10 @@
             // pctJogo5
             // 
             this.pctJogo5.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo5.Location = new System.Drawing.Point(386, 297);
-            this.pctJogo5.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo5.Location = new System.Drawing.Point(515, 366);
+            this.pctJogo5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo5.Name = "pctJogo5";
-            this.pctJogo5.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo5.Size = new System.Drawing.Size(193, 158);
             this.pctJogo5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo5.TabIndex = 8;
             this.pctJogo5.TabStop = false;
@@ -161,10 +161,10 @@
             // pctJogo3
             // 
             this.pctJogo3.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo3.Location = new System.Drawing.Point(464, 148);
-            this.pctJogo3.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo3.Location = new System.Drawing.Point(619, 182);
+            this.pctJogo3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo3.Name = "pctJogo3";
-            this.pctJogo3.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo3.Size = new System.Drawing.Size(193, 158);
             this.pctJogo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo3.TabIndex = 7;
             this.pctJogo3.TabStop = false;
@@ -175,10 +175,10 @@
             // pctJogo2
             // 
             this.pctJogo2.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo2.Location = new System.Drawing.Point(284, 148);
-            this.pctJogo2.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo2.Location = new System.Drawing.Point(379, 182);
+            this.pctJogo2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo2.Name = "pctJogo2";
-            this.pctJogo2.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo2.Size = new System.Drawing.Size(193, 158);
             this.pctJogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo2.TabIndex = 6;
             this.pctJogo2.TabStop = false;
@@ -189,10 +189,10 @@
             // pctJogo1
             // 
             this.pctJogo1.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo1.Location = new System.Drawing.Point(109, 148);
-            this.pctJogo1.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo1.Location = new System.Drawing.Point(145, 182);
+            this.pctJogo1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo1.Name = "pctJogo1";
-            this.pctJogo1.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo1.Size = new System.Drawing.Size(193, 158);
             this.pctJogo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo1.TabIndex = 5;
             this.pctJogo1.TabStop = false;
@@ -204,10 +204,10 @@
             // pctJogo4
             // 
             this.pctJogo4.Image = global::ATEX2023_2.Properties.Resources.imagem;
-            this.pctJogo4.Location = new System.Drawing.Point(174, 297);
-            this.pctJogo4.Margin = new System.Windows.Forms.Padding(2);
+            this.pctJogo4.Location = new System.Drawing.Point(232, 366);
+            this.pctJogo4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctJogo4.Name = "pctJogo4";
-            this.pctJogo4.Size = new System.Drawing.Size(145, 128);
+            this.pctJogo4.Size = new System.Drawing.Size(193, 158);
             this.pctJogo4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctJogo4.TabIndex = 4;
             this.pctJogo4.TabStop = false;
@@ -219,10 +219,10 @@
             // 
             this.pctSeta.BackColor = System.Drawing.Color.Transparent;
             this.pctSeta.Image = global::ATEX2023_2.Properties.Resources.seta;
-            this.pctSeta.Location = new System.Drawing.Point(570, 396);
-            this.pctSeta.Margin = new System.Windows.Forms.Padding(2);
+            this.pctSeta.Location = new System.Drawing.Point(761, 487);
+            this.pctSeta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctSeta.Name = "pctSeta";
-            this.pctSeta.Size = new System.Drawing.Size(54, 42);
+            this.pctSeta.Size = new System.Drawing.Size(72, 52);
             this.pctSeta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctSeta.TabIndex = 2;
             this.pctSeta.TabStop = false;
@@ -233,10 +233,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ATEX2023_2.Properties.Resources.fundo;
-            this.pictureBox2.Location = new System.Drawing.Point(77, 131);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(103, 161);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(562, 314);
+            this.pictureBox2.Size = new System.Drawing.Size(749, 386);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
@@ -244,10 +244,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ATEX2023_2.Properties.Resources.selecao;
-            this.pictureBox1.Location = new System.Drawing.Point(77, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(103, 46);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(562, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(749, 111);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -255,11 +255,11 @@
             // pctSeta2
             // 
             this.pctSeta2.BackColor = System.Drawing.Color.Transparent;
-            this.pctSeta2.Image = global::ATEX2023_2.Properties.Resources.seta;
-            this.pctSeta2.Location = new System.Drawing.Point(109, 396);
-            this.pctSeta2.Margin = new System.Windows.Forms.Padding(2);
+            this.pctSeta2.Image = global::ATEX2023_2.Properties.Resources.Seta2;
+            this.pctSeta2.Location = new System.Drawing.Point(133, 487);
+            this.pctSeta2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pctSeta2.Name = "pctSeta2";
-            this.pctSeta2.Size = new System.Drawing.Size(54, 42);
+            this.pctSeta2.Size = new System.Drawing.Size(72, 52);
             this.pctSeta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctSeta2.TabIndex = 15;
             this.pctSeta2.TabStop = false;
@@ -268,9 +268,9 @@
             // 
             // FrmJogos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(722, 494);
+            this.ClientSize = new System.Drawing.Size(963, 608);
             this.Controls.Add(this.pctSeta2);
             this.Controls.Add(this.pctJogo10);
             this.Controls.Add(this.pctJogo8);
@@ -286,9 +286,9 @@
             this.Controls.Add(this.pctSeta);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmJogos";
-            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
             this.Load += new System.EventHandler(this.FrmJogos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctJogo10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctJogo8)).EndInit();

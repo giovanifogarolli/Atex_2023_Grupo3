@@ -27,20 +27,24 @@ namespace ATEX2023_2
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            FrmInicio frmInicio = new FrmInicio();
-            this.Hide();
-            frmInicio.ShowDialog();
-            this.Close();
-
-            //FrmJogoSelecionado frmJogoSelecionado = new FrmJogoSelecionado();
-            //this.Hide();
-            //frmJogoSelecionado.ShowDialog();
-            //this.Close();
-
-            //FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
-            //this.Hide();
-            //frmCriaJogo.ShowDialog();
-            //this.Close();
+            if(txtEscola.Text == string.Empty || txtNome.Text == string.Empty)
+            {
+                MessageBox.Show("Preencha todos os campos para continuar!");
+            }
+            else
+            {
+                user user = new user();
+                user.Nome = txtNome.Text;
+                user.Escola = txtEscola.Text;
+                user.AnoEscolar = rdbSegundo.Checked?2:rdbTerceiro.Checked?3:1;
+                user.Idade = rdb8.Checked?8:rdb9.Checked?9:7;
+                user.incluirDados();
+                MessageBox.Show($"Bem vindo, {txtNome.Text}!");
+                this.Hide();
+                new FrmInicio().ShowDialog();
+                this.Close();
+            }
+            
         }
 
         private void btnRegistrar_MouseHover(object sender, EventArgs e)

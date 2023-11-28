@@ -16,7 +16,7 @@ namespace ATEX2023_2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmModerador());
+            Application.Run(new FrmCadastro());
         }
         public static int idUser = 0, ehMod = 0;
     }
