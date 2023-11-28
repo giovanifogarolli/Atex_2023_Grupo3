@@ -16,9 +16,9 @@ namespace ATEX2023_2
         public int Idade { get => idade; set => idade = value; }
         public int AnoEscolar { get => anoEscolar; set => anoEscolar = value; }
 
-        public void incluirDados()
+        public int incluirDados()
         {
-            objetoConexao.Executar($"insert into usuario (Nome, Escola, Idade, Ano_Escolar) values ('{Nome}','{Escola}','{Idade}','{AnoEscolar}') ");
+            return objetoConexao.executarId($"insert into usuario (Nome, Escola, Idade, Ano_Escolar) values ('{Nome}','{Escola}','{Idade}','{AnoEscolar}') SET @IDUSER = SCOPE_IDENTITY()");
         }
 
     }

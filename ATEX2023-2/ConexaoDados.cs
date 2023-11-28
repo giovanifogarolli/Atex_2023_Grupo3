@@ -36,6 +36,17 @@ namespace ATEX2023_2
             cmd.ExecuteNonQuery();
             Desconectar();
         }
+        public int executarId(string sql)
+        {
+            Conectar();
+            cmd.Connection = conn;
+            cmd.CommandText = sql;
+            cmd.Parameters.AddWithValue("@IDUSER", 0).Direction =
+            ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+            Desconectar();
+            return Convert.ToInt32(cmd.Parameters["@IDUSER"].Value);
+        }
 
         public (List<string>, List<string>, List<int>) loadIMG(string sql)
         {

@@ -61,6 +61,24 @@ namespace ATEX2023_2
                 this.Close();
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
+                frmCriaJogo.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmJogos frmJogo = new FrmJogos();
+                frmJogo.ShowDialog();
+                this.Close();
+            }
+        }
         #endregion
 
         #region FrontEnd
@@ -131,23 +149,7 @@ namespace ATEX2023_2
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            if(Program.ehMod == 1)
-            {
-                this.Hide();
-                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
-                frmCriaJogo.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                this.Hide();
-                FrmJogos frmJogo = new FrmJogos();
-                frmJogo.ShowDialog();
-                this.Close();
-            }
-        }
+
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
