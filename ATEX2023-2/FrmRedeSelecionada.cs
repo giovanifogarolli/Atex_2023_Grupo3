@@ -56,20 +56,41 @@ namespace ATEX2023_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (rdb1.Checked)
+            if(txtPergunta1.Text != string.Empty &&  txtPergunta2.Text != string.Empty && txtPergunta3.Text != string.Empty)
             {
-                op1 = 1;
+                if (rdb1.Checked)
+                {
+                    op1 = 1;
+                }
+                if (rdb2.Checked)
+                {
+                    op1 = 2;
+                }
+                if (rdb3.Checked)
+                {
+                    op1 = 3;
+                }
+
+                List<string> dados = new List<string>()
+                {
+                    op1.ToString(),
+                    txtPergunta1.Text,
+                    txtPergunta2.Text,
+                    txtPergunta3.Text,
+                    Id
+                };
+
+                dredes.Conclui(dados);
+                FrmInicio frmInicio = new FrmInicio();
+                this.Hide();
+                frmInicio.ShowDialog();
+                this.Close();
             }
-            if (rdb2.Checked)
+            else
             {
-                op1 = 2;
-            }
-            if (rdb3.Checked)
-            {
-                op1 = 3;
+                MessageBox.Show("Preencha todos os campos!");
             }
 
-            dredes.Conclui(op1, txtPergunta1.Text, txtPergunta2.Text, txtPergunta3.Text);
         }
 
 

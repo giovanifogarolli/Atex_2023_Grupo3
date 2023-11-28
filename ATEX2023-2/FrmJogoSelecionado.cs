@@ -60,43 +60,68 @@ namespace ATEX2023_2
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (rdb1.Checked)
+            int rdbtrue = 0;
+            List<RadioButton> rdbs = new List<RadioButton>()
             {
-                op1 = 1;
-            }
-            if (rdb2.Checked)
-            {
-                op1 = 2;
-            }
-            if (rdb3.Checked)
-            {
-                op1 = 3;
-            }
-            if (rdb4.Checked)
-            {
-                op2 = 4;
-            }
-            if (rdb5.Checked)
-            {
-                op2 = 5;
-            }
-            if (rdb6.Checked)
-            {
-                op2 = 6;
-            }
-            List<string> dados = new List<string>()
-            {
-                op1.ToString(),
-                op2.ToString(),
-                txtPergunta1.Text,
-                txtPergunta2.Text
+                 rdb4, rdb5, rdb6
             };
+            for(int i = 0; i<rdbs.Count; i++)
+            {
+                if (rdbs[i].Checked)
+                {
+                    rdbtrue = 1;
+                }
+                else
+                {
+                    rdbtrue = 0;
+                }
+            }
+            if (txtPergunta1.Text != string.Empty && txtPergunta2.Text != string.Empty && rdbtrue == 1)
+            {
+                if (rdb1.Checked)
+                {
+                    op1 = 1;
+                }
+                if (rdb2.Checked)
+                {
+                    op1 = 2;
+                }
+                if (rdb3.Checked)
+                {
+                    op1 = 3;
+                }
+                if (rdb4.Checked)
+                {
+                    op2 = 4;
+                }
+                if (rdb5.Checked)
+                {
+                    op2 = 5;
+                }
+                if (rdb6.Checked)
+                {
+                    op2 = 6;
+                }
+                List<string> dados = new List<string>()
+                {
+                    op1.ToString(),
+                    op2.ToString(),
+                    txtPergunta1.Text,
+                    txtPergunta2.Text,
+                    Id
+                };
 
-            djogos.Conclui(dados);
-            FrmInicio frmInicio = new FrmInicio();
-            this.Hide();
-            frmInicio.ShowDialog();
-            this.Close();
+                djogos.Conclui(dados);
+                FrmInicio frmInicio = new FrmInicio();
+                this.Hide();
+                frmInicio.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
+               
         }
         #endregion
 

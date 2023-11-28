@@ -49,18 +49,20 @@
             this.lblJogo = new System.Windows.Forms.Label();
             this.lblInicio = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.gbPergunta1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ATEX2023_2.Properties.Resources.inicial;
-            this.pictureBox3.Location = new System.Drawing.Point(100, 106);
+            this.pictureBox3.Location = new System.Drawing.Point(133, 121);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(222, 173);
+            this.pictureBox3.Size = new System.Drawing.Size(164, 355);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 67;
             this.pictureBox3.TabStop = false;
@@ -264,11 +266,11 @@
             this.lblRede.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRede.AutoSize = true;
-            this.lblRede.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRede.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblRede.Location = new System.Drawing.Point(372, 19);
             this.lblRede.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRede.Name = "lblRede";
-            this.lblRede.Size = new System.Drawing.Size(107, 18);
+            this.lblRede.Size = new System.Drawing.Size(141, 22);
             this.lblRede.TabIndex = 53;
             this.lblRede.Text = "REDE SOCIAL";
             this.lblRede.MouseLeave += new System.EventHandler(this.lblRede_MouseLeave);
@@ -294,11 +296,11 @@
             this.lblInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblInicio.Location = new System.Drawing.Point(130, 16);
             this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(68, 22);
+            this.lblInicio.Size = new System.Drawing.Size(51, 18);
             this.lblInicio.TabIndex = 51;
             this.lblInicio.Text = "INICIO";
             this.lblInicio.MouseLeave += new System.EventHandler(this.lblInicio_MouseLeave);
@@ -316,6 +318,17 @@
             this.label12.Size = new System.Drawing.Size(600, 22);
             this.label12.TabIndex = 50;
             this.label12.Text = "___________________________________________________________";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ATEX2023_2.Properties.Resources.imgCelular;
+            this.pictureBox2.Location = new System.Drawing.Point(114, 93);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(196, 408);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 68;
+            this.pictureBox2.TabStop = false;
             // 
             // FrmRedeSelecionada
             // 
@@ -340,6 +353,7 @@
             this.Controls.Add(this.lblJogo);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.label12);
+            this.Controls.Add(this.pictureBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmRedeSelecionada";
             this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
@@ -348,6 +362,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.gbPergunta1.ResumeLayout(false);
             this.gbPergunta1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,5 +390,6 @@
         private System.Windows.Forms.Label lblJogo;
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -16,7 +16,8 @@ namespace ATEX2023_2
 
         public void Conectar()
         {
-            string aux = "Server = .\\; Database = ATEXPII; UID = sa; PWD = 123";
+            //string aux = "Server = .\\; Database = ATEXPII; UID = sa; PWD = 123";
+            string aux = "Server = Giovani\\SQLEXPRESS; Database = Atex; UID = sa; PWD = 123"; 
             conn.ConnectionString = aux;
             conn.Open();
         }
@@ -118,9 +119,27 @@ namespace ATEX2023_2
             cmd.Parameters.Add(new SqlParameter("@op2", dados[1]));
             cmd.Parameters.Add(new SqlParameter("@r1", dados[2]));
             cmd.Parameters.Add(new SqlParameter("@r2", dados[3]));
+            cmd.Parameters.Add(new SqlParameter("@idApp", dados[4]));
             cmd.Parameters.Add(new SqlParameter("@idUser", Program.idUser));
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Resposta iserida com sucesso");
+            Desconectar();
+        }
 
-
+        public void RespondeRede(List<string> dados)
+        {
+            Conectar();
+            SqlCommand cmd = new SqlCommand("RespondeRede", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("op1", dados[0]));
+            cmd.Parameters.Add(new SqlParameter("@r1", dados[1]));
+            cmd.Parameters.Add(new SqlParameter("@r2", dados[2]));
+            cmd.Parameters.Add(new SqlParameter("@r3", dados[3]));
+            cmd.Parameters.Add(new SqlParameter("@idApp", dados[4]));
+            cmd.Parameters.Add(new SqlParameter("@idUser", Program.idUser));
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Resposta iserida com sucesso");
+            Desconectar();
         }
         public string returnFunc(string senha, string email)
         {

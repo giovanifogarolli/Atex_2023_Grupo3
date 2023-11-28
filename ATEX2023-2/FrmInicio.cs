@@ -55,13 +55,13 @@ namespace ATEX2023_2
 
         private void lblSobre_MouseHover(object sender, EventArgs e)
         {
-            lblSair.ForeColor = Color.BlueViolet;
+            lblSobre.ForeColor = Color.BlueViolet;
             Cursor= Cursors.Hand;
         }
 
         private void lblSobre_MouseLeave(object sender, EventArgs e)
         {
-            lblSair.ForeColor= Color.Black;
+            lblSobre.ForeColor = Color.Black;
             Cursor = Cursors.Default;
         }
 
@@ -136,12 +136,48 @@ namespace ATEX2023_2
 
         }
 
-        private void pictureBox9_Click(object sender, EventArgs e)
+        private void pictureBox9_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             FrmCadastro frmCadastro = new FrmCadastro();
             frmCadastro.ShowDialog();
             this.Close();
+        }
+
+        private void lblJogos_Click(object sender, EventArgs e)
+        {
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
+                frmCriaJogo.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmJogos frmJogo = new FrmJogos();
+                frmJogo.ShowDialog();
+                this.Close();
+            }
+        }
+
+        private void lblRedeSocial_Click(object sender, EventArgs e)
+        {
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaRede frmCriaRede = new FrmCriaRede();
+                frmCriaRede.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmRedeSocial frmRedeSocial = new FrmRedeSocial();
+                frmRedeSocial.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

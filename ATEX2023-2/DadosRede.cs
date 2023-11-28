@@ -39,9 +39,9 @@ namespace ATEX2023_2
             return cdados.LoadPerguntas(sql);
         }
 
-        public void Conclui(int op1, string r1, string r2, string r3)
+        public void Conclui(List<string> dados)
         {
-            string sql = $"INSERT INTO "; //IMPLEMENTAR
+            cdados.RespondeRede(dados);
         }
 
         public void CriaRede(List<string> dados)

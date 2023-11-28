@@ -327,11 +327,11 @@
             this.lblJogos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblJogos.AutoSize = true;
-            this.lblJogos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogos.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.lblJogos.Location = new System.Drawing.Point(254, 20);
             this.lblJogos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblJogos.Name = "lblJogos";
-            this.lblJogos.Size = new System.Drawing.Size(62, 18);
+            this.lblJogos.Size = new System.Drawing.Size(78, 22);
             this.lblJogos.TabIndex = 52;
             this.lblJogos.Text = "JOGOS";
             this.lblJogos.MouseLeave += new System.EventHandler(this.lblJogos_MouseLeave);
@@ -342,11 +342,11 @@
             this.lblInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblInicio.AutoSize = true;
-            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblInicio.Location = new System.Drawing.Point(129, 18);
             this.lblInicio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInicio.Name = "lblInicio";
-            this.lblInicio.Size = new System.Drawing.Size(68, 22);
+            this.lblInicio.Size = new System.Drawing.Size(51, 18);
             this.lblInicio.TabIndex = 51;
             this.lblInicio.Text = "INICIO";
             this.lblInicio.MouseLeave += new System.EventHandler(this.lblInicio_MouseLeave);
