@@ -50,5 +50,12 @@ namespace ATEX2023_2
 
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FrmModerador().ShowDialog();
+            this.Close();
+        }
     }
 }

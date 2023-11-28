@@ -129,7 +129,6 @@
             this.rdbTerceiro.Name = "rdbTerceiro";
             this.rdbTerceiro.Size = new System.Drawing.Size(137, 20);
             this.rdbTerceiro.TabIndex = 15;
-            this.rdbTerceiro.TabStop = true;
             this.rdbTerceiro.Text = "Terceiro ou acima";
             this.rdbTerceiro.UseVisualStyleBackColor = true;
             this.rdbTerceiro.MouseLeave += new System.EventHandler(this.rdbTerceiro_MouseLeave);
@@ -142,7 +141,6 @@
             this.rdbSegundo.Name = "rdbSegundo";
             this.rdbSegundo.Size = new System.Drawing.Size(83, 20);
             this.rdbSegundo.TabIndex = 14;
-            this.rdbSegundo.TabStop = true;
             this.rdbSegundo.Text = "Segundo";
             this.rdbSegundo.UseVisualStyleBackColor = true;
             this.rdbSegundo.MouseLeave += new System.EventHandler(this.rdbSegundo_MouseLeave);
@@ -151,6 +149,7 @@
             // rdbPrimeiro
             // 
             this.rdbPrimeiro.AutoSize = true;
+            this.rdbPrimeiro.Checked = true;
             this.rdbPrimeiro.Location = new System.Drawing.Point(10, 28);
             this.rdbPrimeiro.Name = "rdbPrimeiro";
             this.rdbPrimeiro.Size = new System.Drawing.Size(78, 20);
@@ -233,7 +232,6 @@
             this.rdb9.Name = "rdb9";
             this.rdb9.Size = new System.Drawing.Size(118, 20);
             this.rdb9.TabIndex = 24;
-            this.rdb9.TabStop = true;
             this.rdb9.Text = "9 anos ou mais";
             this.rdb9.UseVisualStyleBackColor = true;
             this.rdb9.MouseLeave += new System.EventHandler(this.rdb9_MouseLeave);
@@ -246,7 +244,6 @@
             this.rdb8.Name = "rdb8";
             this.rdb8.Size = new System.Drawing.Size(68, 20);
             this.rdb8.TabIndex = 23;
-            this.rdb8.TabStop = true;
             this.rdb8.Text = "8 anos";
             this.rdb8.UseVisualStyleBackColor = true;
             this.rdb8.MouseLeave += new System.EventHandler(this.rdb8_MouseLeave);
@@ -255,6 +252,7 @@
             // rdb7
             // 
             this.rdb7.AutoSize = true;
+            this.rdb7.Checked = true;
             this.rdb7.Location = new System.Drawing.Point(11, 28);
             this.rdb7.Name = "rdb7";
             this.rdb7.Size = new System.Drawing.Size(68, 20);
