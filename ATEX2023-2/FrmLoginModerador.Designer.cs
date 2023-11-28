@@ -157,6 +157,7 @@
             this.label3.Size = new System.Drawing.Size(144, 15);
             this.label3.TabIndex = 49;
             this.label3.Text = "NÃO TENHO CADASTRO";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FrmLoginModerador
             // 

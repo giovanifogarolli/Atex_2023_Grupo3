@@ -46,7 +46,7 @@ namespace ATEX2023_2
             }
             
         }
-
+        #region frontEnd
         private void btnRegistrar_MouseHover(object sender, EventArgs e)
         {
             Cursor = Cursors.Hand;
@@ -126,5 +126,6 @@ namespace ATEX2023_2
         {
             Cursor = Cursors.Default;
         }
+        #endregion
     }
 }
