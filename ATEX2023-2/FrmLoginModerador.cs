@@ -21,5 +21,34 @@ namespace ATEX2023_2
         {
 
         }
+        moderador mod = new moderador();
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == string.Empty || txtSenha.Text == string.Empty)
+            {
+                MessageBox.Show("Preencha todos os campos para continuar!");
+            }
+            else if (!mod.vereficaEmail(txtEmail.Text))
+            {
+                MessageBox.Show("Email inválido!");
+            }
+            else
+            {
+                
+                mod.Email = txtEmail.Text;
+                mod.Senha = txtSenha.Text;
+                if (!mod.vereficaSenha())
+                    MessageBox.Show("Email ou Senha incorretos!");
+                else
+                {
+                    Program.ehMod = 1;
+                    MessageBox.Show("Bem vindo(a)!");
+                    this.Hide();
+                    new FrmJogos().ShowDialog();
+                    this.Close();
+                }
+
+            }
+        }
     }
 }

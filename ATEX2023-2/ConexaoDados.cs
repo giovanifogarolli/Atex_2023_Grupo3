@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace ATEX2023_2
 {
@@ -15,7 +16,7 @@ namespace ATEX2023_2
 
         public void Conectar()
         {
-            string aux = "Server = Giovani\\SQLEXPRESS; Database = Atex; UID = sa; PWD = 123";
+            string aux = "Server = .\\; Database = ATEXPII; UID = sa; PWD = 123";
             conn.ConnectionString = aux;
             conn.Open();
         }
@@ -84,6 +85,7 @@ namespace ATEX2023_2
             cmd.Parameters.Add(new SqlParameter("@opDesc4", dados[9]));
             cmd.Parameters.Add(new SqlParameter("@opDesc5", dados[10]));
             cmd.Parameters.Add(new SqlParameter("@opDesc6", dados[11]));
+            MessageBox.Show("Inserido com sucesso");
             cmd.ExecuteNonQuery();
             Desconectar();
         }
@@ -103,7 +105,28 @@ namespace ATEX2023_2
             cmd.Parameters.Add(new SqlParameter("@opDesc2", dados[7]));
             cmd.Parameters.Add(new SqlParameter("@opDesc3", dados[8]));
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Inserido com sucesso");
             Desconectar();
+        }
+        public string returnFunc(string senha, string email)
+        {
+            Conectar();
+            string resultado = "";
+            using (SqlCommand cmd = new SqlCommand("SELECT [dbo].[ModPwdVerification](@senha, @email)", conn))
+            {
+                cmd.Parameters.AddWithValue("@senha", senha);
+                cmd.Parameters.AddWithValue("@email", email);
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        resultado = reader[0].ToString();
+                    }
+                }
+            }
+            Desconectar();
+            return resultado;
         }
     }
 }
