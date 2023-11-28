@@ -84,8 +84,19 @@ namespace ATEX2023_2
             {
                 op2 = 6;
             }
+            List<string> dados = new List<string>()
+            {
+                op1.ToString(),
+                op2.ToString(),
+                txtPergunta1.Text,
+                txtPergunta2.Text
+            };
 
-            djogos.Conclui(op1, op2, txtPergunta1.Text, txtPergunta2.Text);
+            djogos.Conclui(dados);
+            FrmInicio frmInicio = new FrmInicio();
+            this.Hide();
+            frmInicio.ShowDialog();
+            this.Close();
         }
         #endregion
 

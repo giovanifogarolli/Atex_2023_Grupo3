@@ -108,6 +108,20 @@ namespace ATEX2023_2
             MessageBox.Show("Inserido com sucesso");
             Desconectar();
         }
+
+        public void RespondeJogo(List<string> dados)
+        {
+            Conectar();
+            SqlCommand cmd = new SqlCommand("RespondeJogo", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add(new SqlParameter("@op1", dados[0]));
+            cmd.Parameters.Add(new SqlParameter("@op2", dados[1]));
+            cmd.Parameters.Add(new SqlParameter("@r1", dados[2]));
+            cmd.Parameters.Add(new SqlParameter("@r2", dados[3]));
+            cmd.Parameters.Add(new SqlParameter("@idUser", Program.idUser));
+
+
+        }
         public string returnFunc(string senha, string email)
         {
             Conectar();

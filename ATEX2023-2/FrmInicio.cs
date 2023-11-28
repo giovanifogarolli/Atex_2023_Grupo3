@@ -55,30 +55,50 @@ namespace ATEX2023_2
 
         private void lblSobre_MouseHover(object sender, EventArgs e)
         {
-            lblSobre.ForeColor = Color.BlueViolet;
+            lblSair.ForeColor = Color.BlueViolet;
             Cursor= Cursors.Hand;
         }
 
         private void lblSobre_MouseLeave(object sender, EventArgs e)
         {
-            lblSobre.ForeColor= Color.Black;
+            lblSair.ForeColor= Color.Black;
             Cursor = Cursors.Default;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            FrmRedeSocial frmRedeSocial = new FrmRedeSocial();
-            this.Hide();
-            frmRedeSocial.ShowDialog();
-            this.Close();
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaRede frmCriaRede = new FrmCriaRede();
+                frmCriaRede.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmRedeSocial frmRedeSocial = new FrmRedeSocial();
+                frmRedeSocial.ShowDialog();
+                this.Close();
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            FrmJogos frmJogo = new FrmJogos();
-            this.Hide();
-            frmJogo.ShowDialog();
-            this.Close();
+            if(Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
+                frmCriaJogo.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmJogos frmJogo = new FrmJogos();
+                frmJogo.ShowDialog();
+                this.Close();
+            }
         }
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
@@ -114,6 +134,14 @@ namespace ATEX2023_2
         private void FrmInicio_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCadastro frmCadastro = new FrmCadastro();
+            frmCadastro.ShowDialog();
+            this.Close();
         }
     }
 }

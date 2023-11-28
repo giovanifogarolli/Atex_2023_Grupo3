@@ -40,9 +40,10 @@ namespace ATEX2023_2
             return cdados.LoadPerguntas(sql);
         }
 
-        public void Conclui(int op1, int op2, string r1, string r2)
+        public void Conclui(List<string> dados)
         {
-            string sql = $"INSERT INTO "; //IMPLEMENTAR
+            cdados.RespondeJogo(dados);
+            
         }
 
         public void CriaJogo(List<string> dados)
