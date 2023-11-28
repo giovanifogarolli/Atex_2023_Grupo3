@@ -77,7 +77,7 @@
             // txtPgtAberta2
             // 
             this.txtPgtAberta2.Location = new System.Drawing.Point(339, 365);
-            this.txtPgtAberta2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtAberta2.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtAberta2.Name = "txtPgtAberta2";
             this.txtPgtAberta2.Size = new System.Drawing.Size(187, 20);
             this.txtPgtAberta2.TabIndex = 101;
@@ -97,7 +97,7 @@
             // txtPgtAberta1
             // 
             this.txtPgtAberta1.Location = new System.Drawing.Point(340, 334);
-            this.txtPgtAberta1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtAberta1.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtAberta1.Name = "txtPgtAberta1";
             this.txtPgtAberta1.Size = new System.Drawing.Size(187, 20);
             this.txtPgtAberta1.TabIndex = 99;
@@ -128,7 +128,7 @@
             // txtPgtFch1Resp3
             // 
             this.txtPgtFch1Resp3.Location = new System.Drawing.Point(339, 266);
-            this.txtPgtFch1Resp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtFch1Resp3.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtFch1Resp3.Name = "txtPgtFch1Resp3";
             this.txtPgtFch1Resp3.Size = new System.Drawing.Size(188, 20);
             this.txtPgtFch1Resp3.TabIndex = 86;
@@ -148,7 +148,7 @@
             // txtPgtFch1Resp2
             // 
             this.txtPgtFch1Resp2.Location = new System.Drawing.Point(339, 243);
-            this.txtPgtFch1Resp2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtFch1Resp2.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtFch1Resp2.Name = "txtPgtFch1Resp2";
             this.txtPgtFch1Resp2.Size = new System.Drawing.Size(188, 20);
             this.txtPgtFch1Resp2.TabIndex = 84;
@@ -168,7 +168,7 @@
             // txtPgtFch1Resp1
             // 
             this.txtPgtFch1Resp1.Location = new System.Drawing.Point(339, 220);
-            this.txtPgtFch1Resp1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtFch1Resp1.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtFch1Resp1.Name = "txtPgtFch1Resp1";
             this.txtPgtFch1Resp1.Size = new System.Drawing.Size(188, 20);
             this.txtPgtFch1Resp1.TabIndex = 82;
@@ -188,7 +188,7 @@
             // txtPgtFechada1
             // 
             this.txtPgtFechada1.Location = new System.Drawing.Point(340, 194);
-            this.txtPgtFechada1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtFechada1.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtFechada1.Name = "txtPgtFechada1";
             this.txtPgtFechada1.Size = new System.Drawing.Size(187, 20);
             this.txtPgtFechada1.TabIndex = 80;
@@ -220,7 +220,7 @@
             // btnAdcArquivo
             // 
             this.btnAdcArquivo.Location = new System.Drawing.Point(782, 326);
-            this.btnAdcArquivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdcArquivo.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdcArquivo.Name = "btnAdcArquivo";
             this.btnAdcArquivo.Size = new System.Drawing.Size(101, 34);
             this.btnAdcArquivo.TabIndex = 77;
@@ -233,7 +233,7 @@
             this.btnConfirmar.BackColor = System.Drawing.Color.Black;
             this.btnConfirmar.ForeColor = System.Drawing.Color.BlueViolet;
             this.btnConfirmar.Location = new System.Drawing.Point(338, 468);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(109, 33);
             this.btnConfirmar.TabIndex = 75;
@@ -244,7 +244,7 @@
             // txtNomeJogo
             // 
             this.txtNomeJogo.Location = new System.Drawing.Point(322, 132);
-            this.txtNomeJogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNomeJogo.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeJogo.Name = "txtNomeJogo";
             this.txtNomeJogo.Size = new System.Drawing.Size(204, 20);
             this.txtNomeJogo.TabIndex = 74;
@@ -368,18 +368,19 @@
             // 
             this.pctVoltar.Image = global::ATEX2023_2.Properties.Resources.setinha;
             this.pctVoltar.Location = new System.Drawing.Point(20, 266);
-            this.pctVoltar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctVoltar.Margin = new System.Windows.Forms.Padding(2);
             this.pctVoltar.Name = "pctVoltar";
             this.pctVoltar.Size = new System.Drawing.Size(23, 24);
             this.pctVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctVoltar.TabIndex = 76;
             this.pctVoltar.TabStop = false;
+            this.pctVoltar.Click += new System.EventHandler(this.pctVoltar_Click);
             // 
             // pctImagem
             // 
             this.pctImagem.Image = global::ATEX2023_2.Properties.Resources.inicial;
             this.pctImagem.Location = new System.Drawing.Point(598, 105);
-            this.pctImagem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctImagem.Margin = new System.Windows.Forms.Padding(2);
             this.pctImagem.Name = "pctImagem";
             this.pctImagem.Size = new System.Drawing.Size(257, 244);
             this.pctImagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -403,7 +404,7 @@
             // txtPgtAberta3
             // 
             this.txtPgtAberta3.Location = new System.Drawing.Point(339, 401);
-            this.txtPgtAberta3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPgtAberta3.Margin = new System.Windows.Forms.Padding(2);
             this.txtPgtAberta3.Name = "txtPgtAberta3";
             this.txtPgtAberta3.Size = new System.Drawing.Size(187, 20);
             this.txtPgtAberta3.TabIndex = 104;
@@ -457,9 +458,9 @@
             this.Controls.Add(this.lblJogos);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmCriaRede";
-            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
+            this.Padding = new System.Windows.Forms.Padding(15, 60, 15, 16);
             ((System.ComponentModel.ISupportInitialize)(this.pctVoltar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctImagem)).EndInit();
             this.ResumeLayout(false);

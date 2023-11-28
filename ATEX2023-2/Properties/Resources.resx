@@ -124,6 +124,9 @@
   <data name="RedeSocial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RedeSocial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Seta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Seta2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="inicial" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\inicial.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,7 +160,7 @@
   <data name="fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Seta2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Seta2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Free fire" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Free fire.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -20,10 +20,10 @@ namespace ATEX2023_2
         {
             InitializeComponent();
         }
+
+        #region Back End
+
         DadosJogos djogos = new DadosJogos();
-
-
-
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
             List<string> dados = new List<string>
@@ -55,9 +55,17 @@ namespace ATEX2023_2
             }
         }
 
+        private void pctVoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.ShowDialog();
+            this.Close();
+        }
 
+        #endregion
 
-        //---------------------FRONT END----------------------------- //
+        #region Front end
         private void lblInicio_MouseHover(object sender, EventArgs e)
         {
             Cursor = Cursors.Hand;
@@ -105,5 +113,7 @@ namespace ATEX2023_2
             Cursor = Cursors.Default;
             lblInicio.ForeColor = Color.Black;
         }
+
+        #endregion
     }
 }

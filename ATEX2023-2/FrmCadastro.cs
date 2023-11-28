@@ -17,6 +17,7 @@ namespace ATEX2023_2
             InitializeComponent();
         }
 
+        #region backend
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FrmModerador frmModerador = new FrmModerador();
@@ -44,8 +45,9 @@ namespace ATEX2023_2
                 new FrmInicio().ShowDialog();
                 this.Close();
             }
-            
         }
+        #endregion
+
         #region frontEnd
         private void btnRegistrar_MouseHover(object sender, EventArgs e)
         {

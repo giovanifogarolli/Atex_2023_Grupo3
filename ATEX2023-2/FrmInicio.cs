@@ -17,6 +17,54 @@ namespace ATEX2023_2
             InitializeComponent();
         }
 
+        #region BackEnd
+        private void pictureBox9_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCadastro frmCadastro = new FrmCadastro();
+            frmCadastro.ShowDialog();
+            this.Close();
+        }
+
+        private void lblJogos_Click(object sender, EventArgs e)
+        {
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
+                frmCriaJogo.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmJogos frmJogo = new FrmJogos();
+                frmJogo.ShowDialog();
+                this.Close();
+            }
+        }
+
+        private void lblRedeSocial_Click(object sender, EventArgs e)
+        {
+            if (Program.ehMod == 1)
+            {
+                this.Hide();
+                FrmCriaRede frmCriaRede = new FrmCriaRede();
+                frmCriaRede.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                FrmRedeSocial frmRedeSocial = new FrmRedeSocial();
+                frmRedeSocial.ShowDialog();
+                this.Close();
+            }
+        }
+        #endregion
+
+        #region FrontEnd
+
         private void lblInicio_MouseHover(object sender, EventArgs e)
         {
             lblInicio.ForeColor = Color.BlueViolet;
@@ -135,49 +183,7 @@ namespace ATEX2023_2
         {
 
         }
+        #endregion
 
-        private void pictureBox9_Click_1(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmCadastro frmCadastro = new FrmCadastro();
-            frmCadastro.ShowDialog();
-            this.Close();
-        }
-
-        private void lblJogos_Click(object sender, EventArgs e)
-        {
-            if (Program.ehMod == 1)
-            {
-                this.Hide();
-                FrmCriaJogo frmCriaJogo = new FrmCriaJogo();
-                frmCriaJogo.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                this.Hide();
-                FrmJogos frmJogo = new FrmJogos();
-                frmJogo.ShowDialog();
-                this.Close();
-            }
-        }
-
-        private void lblRedeSocial_Click(object sender, EventArgs e)
-        {
-            if (Program.ehMod == 1)
-            {
-                this.Hide();
-                FrmCriaRede frmCriaRede = new FrmCriaRede();
-                frmCriaRede.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                this.Hide();
-                FrmRedeSocial frmRedeSocial = new FrmRedeSocial();
-                frmRedeSocial.ShowDialog();
-                this.Close();
-            }
-        }
     }
 }

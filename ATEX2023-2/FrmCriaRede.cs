@@ -17,6 +17,8 @@ namespace ATEX2023_2
             InitializeComponent();
         }
 
+        #region BackEnd
+
         DadosRede dredes = new DadosRede();
 
         private void btnConfirmar_Click(object sender, EventArgs e)
@@ -46,5 +48,14 @@ namespace ATEX2023_2
                 pctImagem.ImageLocation = ofd.FileName;
             }
         }
+
+        private void pctVoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.ShowDialog();
+            this.Close();
+        }
+        #endregion
     }
 }

@@ -16,7 +16,7 @@ namespace ATEX2023_2
         {
             InitializeComponent();
         }
-
+        #region Backend
         private void FrmLoginModerador_Load(object sender, EventArgs e)
         {
 
@@ -57,5 +57,6 @@ namespace ATEX2023_2
             new FrmModerador().ShowDialog();
             this.Close();
         }
+        #endregion
     }
 }
