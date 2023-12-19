@@ -27,5 +27,5 @@ Projeto da Atividade de extensão 2023 do 4o periodo da UNIFENAS, utilizando Win
 ## Contribuição
 
 <a href="github.com/joaoLucasLourenco"> João Lucas - Backend </a>
-</br>
+<br>
 <a href="https://github.com/felipeleal27"> Felipe Leal - Frontend </a>
