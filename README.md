@@ -3,10 +3,10 @@
 >Status do projeto: Finalizado
 
 <p align="center">
- <a href="##objetivo">Objetivo</a> •
- <a href="##tecnologias">Tecnologias</a> • 
- <a href="##features">Features</a> • 
- <a href="##contribuicao">Contribuição</a> • 
+ <a href="## Objetivo">Objetivo</a> •
+ <a href="## Tecnologias">Tecnologias</a> • 
+ <a href="## Features">Features</a> • 
+ <a href="## Contribuição">Contribuição</a>
 </p>
 
 ## Objetivo
@@ -27,4 +27,5 @@ Projeto da Atividade de extensão 2023 do 4o periodo da UNIFENAS, utilizando Win
 ## Contribuição
 
 <a href="github.com/joaoLucasLourenco"> João Lucas - Backend </a>
+</br>
 <a href="https://github.com/felipeleal27"> Felipe Leal - Frontend </a>
