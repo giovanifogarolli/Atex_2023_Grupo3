@@ -26,6 +26,6 @@ Projeto da Atividade de extensão 2023 do 4o periodo da UNIFENAS, utilizando Win
 
 ## Contribuição
 
-<a href="external.ink?to=github.com/joaoLucasLourenco"> João Lucas - Backend </a>
+["external.ink?to=github.com/joaoLucasLourenco"](João Lucas - Backend)
 <br>
-<a href="external.ink?to=https://github.com/felipeleal27"> Felipe Leal - Frontend </a>
+<a href="[external.ink?to=https://github.com/felipeleal27](https://github.com/felipeleal27)"> Felipe Leal - Frontend </a>
